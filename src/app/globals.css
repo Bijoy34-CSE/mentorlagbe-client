@@ -128,3 +128,14 @@
     @apply font-sans;
   }
 }
+/* MentorLagbe brand color (indigo) */
+:root {
+  --primary: oklch(0.511 0.262 276.966);
+  --primary-foreground: oklch(0.985 0 0);
+  --ring: oklch(0.585 0.233 277.117);
+}
+.dark {
+  --primary: oklch(0.585 0.233 277.117);
+  --primary-foreground: oklch(0.985 0 0);
+  --ring: oklch(0.511 0.262 276.966);
+}
