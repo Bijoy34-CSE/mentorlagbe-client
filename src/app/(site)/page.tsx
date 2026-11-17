@@ -1,10 +1,23 @@
-import { Container } from "@/components/container";
+import { CtaSection } from "@/components/home/cta-section";
+import { FeaturedTuitions } from "@/components/home/featured-tuitions";
+import { Hero } from "@/components/home/hero";
+import { HowItWorks } from "@/components/home/how-it-works";
+import { PricingSection } from "@/components/home/pricing-section";
+import { StatsSection } from "@/components/home/stats-section";
+import { SubjectsSection } from "@/components/home/subjects-section";
+import { TestimonialsSection } from "@/components/home/testimonials-section";
 
 export default function HomePage() {
   return (
-    <Container className="py-24">
-      <h1 className="text-4xl font-bold tracking-tight">Find Your Ideal Tutor</h1>
-      <p className="mt-3 text-muted-foreground">The full home page is coming in the next phase.</p>
-    </Container>
+    <>
+      <Hero />
+      <FeaturedTuitions />
+      <HowItWorks />
+      <PricingSection />
+      <SubjectsSection />
+      <StatsSection />
+      <TestimonialsSection />
+      <CtaSection />
+    </>
   );
 }
