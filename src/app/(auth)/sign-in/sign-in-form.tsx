@@ -12,13 +12,6 @@ import { Label } from "@/components/ui/label";
 import { clearToken } from "@/lib/api";
 import { authClient } from "@/lib/auth-client";
 
-// Demo accounts so reviewers can test each role quickly
-const demoAccounts = [
-  { label: "Student", email: "ayesha@mentorlagbe.com", password: "Demo@1234" },
-  { label: "Tutor", email: "rahim@mentorlagbe.com", password: "Demo@1234" },
-  { label: "Admin", email: "admin@mentorlagbe.com", password: "Admin@1234" },
-];
-
 const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
 
 export function SignInForm() {
@@ -95,28 +88,6 @@ export function SignInForm() {
           {loading ? "Signing in..." : "Sign In"}
         </Button>
       </form>
-
-      <div className="rounded-lg border bg-muted/40 p-4">
-        <p className="mb-3 text-sm font-medium">Try a demo account</p>
-        <div className="flex flex-wrap gap-2">
-          {demoAccounts.map((account) => (
-            <Button
-              key={account.label}
-              type="button"
-              variant="outline"
-              size="sm"
-              onClick={() => {
-                setEmail(account.email);
-                setPassword(account.password);
-                setErrors({});
-              }}
-            >
-              {account.label}
-            </Button>
-          ))}
-        </div>
-      </div>
-
       <p className="text-center text-sm text-muted-foreground">
         Do not have an account?{" "}
         <Link href="/sign-up" className="font-medium text-primary hover:underline">

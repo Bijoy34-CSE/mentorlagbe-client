@@ -116,7 +116,7 @@ export function Footer() {
 
       <div className="border-t">
         <Container className="py-5 text-center text-sm text-muted-foreground">
-          © {new Date().getFullYear()} MentorLagbe. All rights reserved.
+                    © 2026 MentorLagbe. All rights reserved.
         </Container>
       </div>
     </footer>

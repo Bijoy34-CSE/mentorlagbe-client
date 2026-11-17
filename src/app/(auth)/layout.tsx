@@ -27,7 +27,7 @@ export default function AuthLayout({ children }: { children: React.ReactNode }) 
           </ul>
         </div>
 
-        <p className="text-sm text-primary-foreground/70">© {new Date().getFullYear()} MentorLagbe</p>
+                <p className="text-sm text-primary-foreground/70">© 2026 MentorLagbe</p>
       </div>
 
       {/* Form area */}
