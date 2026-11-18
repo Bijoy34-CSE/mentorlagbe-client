@@ -1,36 +1,58 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# MentorLagbe (Client)
 
-## Getting Started
+MentorLagbe is a smart tuition and mentorship platform. Students find verified tutors by subject, class level, mode and budget. Tutors post tuition batches and manage applicants. Admins review every listing, manage users and track Stripe revenue.
 
-First, run the development server:
+- **Live site:** https://YOUR-CLIENT-URL.vercel.app
+- **Server repository:** https://github.com/Bijoy34-CSE/mentorlagbe-server
+- **API:** https://YOUR-SERVER-URL.vercel.app
+
+## Test Accounts
+
+| Role | Email | Password |
+|---|---|---|
+| Admin | admin@mentorlagbe.com | Admin@1234 |
+| Tutor (Pro) | rahim@mentorlagbe.com | Demo@1234 |
+| Tutor (Free) | sabbir@mentorlagbe.com | Demo@1234 |
+| Student | ayesha@mentorlagbe.com | Demo@1234 |
+
+Stripe test card: `4242 4242 4242 4242`, any future date, any CVC.
+
+## Key Features
+
+- Role based accounts: Student, Tutor and Admin
+- Public home page with hero, latest tuitions, pricing, how it works, subjects, statistics and testimonials
+- Browse tuitions with server-side search, filters (subject, class level, mode) and pagination
+- Tuition details page. Only students can apply, and duplicate applications are blocked
+- Tutor dashboard: post tuition with ImgBB banner upload, edit, delete, open/close, manage applicants
+- Free tutors can post 2 tuitions. Pro tutors can post unlimited tuitions
+- Admin dashboard: platform stats, tuition approval, user role management, Stripe transactions
+- Student dashboard: stats, application tracking and cancel for pending applications
+- Stripe Checkout for the Pro plan (Tutor $15, Student $10)
+- Profile update with ImgBB image upload
+- Dark and light theme
+- Loading skeletons, custom 404 and error pages, toast notifications
+- Fully responsive for mobile, tablet and desktop
+
+## Tech Stack
+
+Next.js 16 (App Router), TypeScript, Tailwind CSS, shadcn/ui, BetterAuth, Framer Motion, Sonner
+
+## NPM Packages
+
+`next`, `react`, `react-dom`, `better-auth`, `framer-motion`, `lucide-react`, `next-themes`, `sonner`, `tailwindcss`, `shadcn`, `class-variance-authority`, `clsx`, `tailwind-merge`
+
+## Run Locally
 
 ```bash
+npm install
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Create a `.env.local` file:
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+```
+NEXT_PUBLIC_API_URL=http://localhost:5000
+NEXT_PUBLIC_IMGBB_API_KEY=your_imgbb_key
+```
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+The server must be running too. See the server repository for its setup.
