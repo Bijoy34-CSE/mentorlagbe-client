@@ -53,6 +53,9 @@ export function SignUpForm() {
       email: email.trim(),
       password,
       role,
+      phone: "",
+      bio: "",
+      plan: "free",
     });
     setLoading(false);
 
