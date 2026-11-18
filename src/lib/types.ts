@@ -70,3 +70,25 @@ export interface UserProfile {
   plan?: "free" | "pro";
   createdAt?: string;
 }
+export interface AdminStats {
+  totalUsers: number;
+  totalTutors: number;
+  totalStudents: number;
+  pendingTuitions: number;
+  approvedTuitions: number;
+  totalRevenue: number;
+}
+
+export interface Payment {
+  _id: string;
+  userEmail: string;
+  userName: string;
+  userRole: "student" | "tutor";
+  planName: string;
+  amount: number;
+  currency: string;
+  transactionId: string;
+  stripeSessionId: string;
+  paymentStatus: string;
+  paidAt: string;
+}
