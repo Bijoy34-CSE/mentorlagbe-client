@@ -22,3 +22,23 @@ export interface PlatformStats {
   tuitions: number;
   accepted: number;
 }
+export interface TuitionDetail extends Tuition {
+  tutor: {
+    name: string;
+    image?: string;
+    bio?: string;
+    plan?: "free" | "pro";
+  } | null;
+}
+
+export interface TuitionList {
+  data: Tuition[];
+  total: number;
+  page: number;
+  totalPages: number;
+}
+
+export interface TuitionMeta {
+  subjects: string[];
+  classLevels: string[];
+}
