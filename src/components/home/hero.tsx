@@ -163,7 +163,7 @@ export function Hero() {
           <FloatingChip className="top-0 -right-2 sm:-right-6" delay={0}>
             <CheckCircle2 className="size-4 text-emerald-500" /> Application accepted
           </FloatingChip>
-          <FloatingChip className="bottom-16 -left-2 sm:-left-8" delay={1.2}>
+          <FloatingChip className="-bottom-1 left-6" delay={1.2}>
             <ShieldCheck className="size-4 text-primary" /> Verified by admin
           </FloatingChip>
           <FloatingChip className="-bottom-1 right-6" delay={2.2}>
