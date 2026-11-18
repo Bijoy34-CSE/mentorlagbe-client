@@ -46,7 +46,7 @@ export function SignInForm() {
 
     clearToken();
     toast.success("Welcome back!");
-    router.push("/");
+    router.push("/dashboard");
     router.refresh();
   }
 

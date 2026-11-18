@@ -63,7 +63,7 @@ export function SignUpForm() {
 
     clearToken();
     toast.success("Account created successfully");
-    router.push("/");
+    router.push("/dashboard");
     router.refresh();
   }
 
