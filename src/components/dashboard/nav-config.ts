@@ -1,5 +1,6 @@
 import type { LucideIcon } from "lucide-react";
 import {
+  Bookmark,
   ClipboardList,
   CreditCard,
   LayoutDashboard,
@@ -23,9 +24,10 @@ const profile: NavItem = { href: "/dashboard/profile", label: "Update Profile", 
 
 // Sidebar links for each role
 export const navByRole: Record<DashboardRole, NavItem[]> = {
-  student: [
+    student: [
     { href: "/dashboard/student", label: "Overview", icon: LayoutDashboard },
     { href: "/dashboard/student/my-applications", label: "My Applications", icon: ClipboardList },
+    { href: "/dashboard/student/saved", label: "Saved Tuitions", icon: Bookmark },
     profile,
   ],
   tutor: [
