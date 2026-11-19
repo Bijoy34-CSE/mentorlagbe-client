@@ -9,7 +9,7 @@ import { UserAvatar } from "@/components/user-avatar";
 import { ServerApiError, serverFetch } from "@/lib/server-api";
 import type { TuitionDetail } from "@/lib/types";
 import { cn } from "@/lib/utils";
-
+import { BookmarkButton } from "@/components/bookmark-button";
 export const metadata: Metadata = { title: "Tuition Details | MentorLagbe" };
 
 async function DetailsContent({ params }: { params: Promise<{ id: string }> }) {
@@ -95,8 +95,9 @@ async function DetailsContent({ params }: { params: Promise<{ id: string }> }) {
       </div>
 
       <aside className="lg:col-span-1">
-        <div className="lg:sticky lg:top-24">
+                <div className="space-y-3 lg:sticky lg:top-24">
           <ApplyPanel tuitionId={tuition._id} monthlyFee={tuition.monthlyFee} />
+          <BookmarkButton tuitionId={tuition._id} variant="button" />
         </div>
       </aside>
     </div>

@@ -5,7 +5,7 @@ import { UserAvatar } from "@/components/user-avatar";
 import { formatFee } from "@/lib/format";
 import type { Tuition } from "@/lib/types";
 import { cn } from "@/lib/utils";
-
+import { BookmarkButton } from "@/components/bookmark-button";
 export function TuitionCard({ tuition }: { tuition: Tuition }) {
   const isOnline = tuition.mode === "Online";
 
@@ -31,6 +31,7 @@ export function TuitionCard({ tuition }: { tuition: Tuition }) {
         <span className="absolute top-3 right-3 rounded-full bg-background/90 px-2.5 py-1 text-xs font-semibold backdrop-blur">
           {tuition.subject}
         </span>
+                <BookmarkButton tuitionId={tuition._id} className="absolute right-3 bottom-3" />
       </div>
 
       <div className="flex flex-1 flex-col gap-4 p-5">
