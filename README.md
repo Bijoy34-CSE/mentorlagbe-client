@@ -2,9 +2,9 @@
 
 MentorLagbe is a smart tuition and mentorship platform. Students find verified tutors by subject, class level, mode and budget. Tutors post tuition batches and manage applicants. Admins review every listing, manage users and track Stripe revenue.
 
-- **Live site:** https://YOUR-CLIENT-URL.vercel.app
+- **Live site:** https://mentorlagbe-bijoy.vercel.app/
 - **Server repository:** https://github.com/Bijoy34-CSE/mentorlagbe-server
-- **API:** https://YOUR-SERVER-URL.vercel.app
+- **API:** https://mentorlagbe-api-bijoy.vercel.app/
 
 ## Test Accounts
 
