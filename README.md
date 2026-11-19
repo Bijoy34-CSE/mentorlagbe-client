@@ -32,7 +32,7 @@ Stripe test card: `4242 4242 4242 4242`, any future date, any CVC.
 - Dark and light theme
 - Loading skeletons, custom 404 and error pages, toast notifications
 - Fully responsive for mobile, tablet and desktop
-
+- Student bookmarks: save tuitions and see them in the Saved Tuitions tab
 ## Tech Stack
 
 Next.js 16 (App Router), TypeScript, Tailwind CSS, shadcn/ui, BetterAuth, Framer Motion, Sonner
