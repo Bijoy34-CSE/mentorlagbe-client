@@ -42,7 +42,7 @@ export function Hero() {
       <div className="absolute bottom-0 left-0 -z-10 size-96 rounded-full bg-primary/10 blur-3xl" />
       <div className="absolute inset-0 -z-10 bg-[linear-gradient(to_right,var(--border)_1px,transparent_1px),linear-gradient(to_bottom,var(--border)_1px,transparent_1px)] bg-[size:56px_56px] opacity-50 [mask-image:radial-gradient(ellipse_at_center,black,transparent_75%)]" />
 
-      <Container className="grid items-center gap-14 py-16 lg:grid-cols-2 lg:py-24">
+      <Container className="grid items-center gap-14 py-10 lg:grid-cols-2 lg:py-10">
         {/* Left side: text and search */}
         <motion.div
           initial={{ opacity: 0, y: 20 }}
